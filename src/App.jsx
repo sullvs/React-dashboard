@@ -9,7 +9,7 @@ function App() {
   const [IsLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/React-dashboard/">
       <Routes>
       <Route path="/Login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
         <Route
